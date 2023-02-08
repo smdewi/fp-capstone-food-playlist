@@ -126,7 +126,7 @@ export default class NavBar extends React.Component {
                       </NavDropdown.Item>
                     </NavDropdown>
                     <Nav.Link href="./">Favourite</Nav.Link>
-                    <Nav.Link href="#action2">Cart</Nav.Link>
+                    <Nav.Link href="./">Cart</Nav.Link>
                   </Nav>
                 </Offcanvas.Body>
               </Navbar.Offcanvas>

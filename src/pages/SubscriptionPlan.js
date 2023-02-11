@@ -1,10 +1,4 @@
-import {
-  Container,
-  Form,
-  Row,
-  Col,  
-  Image,
-} from "react-bootstrap";
+import { Container, Form, Row, Col, Image, Card } from "react-bootstrap";
 
 import ButtonNavigate from "../components/ButtonNavigate";
 import backArrow from "../assets/icons/arrows/ic-arrow-tail-back.svg";
@@ -17,8 +11,9 @@ export function SubscriptionPlan() {
         <ButtonNavigate
           class="btn-back"
           path="/playlist"
-          imgSrc={backArrow}
-          imgAlt="Back Arrow"
+          imgClassSec="back-arrow"
+          imgSrcSec={backArrow}
+          imgAltSec="Back Arrow"
         />
         <br />
         <Image className="img-small" src={subscriptionPlan} alt="Icons" />
@@ -27,10 +22,14 @@ export function SubscriptionPlan() {
         </h2>
         <Row>
           <Col xs={7} sm={7} md={7} lg={7} xl={7} xxl={7}>
-            <p>5 meal deliveries/pax</p>
+            <Card className="my-2 container-border-pink-md">
+              <Card.Text className="my-auto mx-auto">
+                5 meal deliveries/pax
+              </Card.Text>{" "}
+            </Card>
           </Col>
           <Col xs={5} sm={5} md={5} lg={5} xl={5} xxl={5}>
-            <Form.Select className="dropdown-short">
+            <Form.Select className="my-2 fc-pink dropdown-short">
               <option>Pax</option>
               <option value="1">1</option>
               <option value="2">2</option>
@@ -40,10 +39,14 @@ export function SubscriptionPlan() {
         </Row>
         <Row>
           <Col xs={7} sm={7} md={7} lg={7} xl={7} xxl={7}>
-            <p>Preferred day of delivery</p>
+            <Card className="my-2 container-border-pink-md">
+              <Card.Text className="my-auto mx-auto">
+                Preferred day of delivery
+              </Card.Text>{" "}
+            </Card>
           </Col>
           <Col xs={5} sm={5} md={5} lg={5} xl={5} xxl={5}>
-            <Form.Select className="dropdown-short">
+            <Form.Select className="my-2 fc-pink dropdown-short">
               <option>Day</option>
               <option value="1">Monday</option>
               <option value="2">Tuesday</option>
@@ -57,10 +60,14 @@ export function SubscriptionPlan() {
         </Row>
         <Row>
           <Col xs={7} sm={7} md={7} lg={7} xl={7} xxl={7}>
-            <p>Preferred time of delivery</p>
+            <Card className="my-2 container-border-pink-md">
+              <Card.Text className="my-auto mx-auto">
+                Preferred time of delivery
+              </Card.Text>{" "}
+            </Card>
           </Col>
           <Col xs={5} sm={5} md={5} lg={5} xl={5} xxl={5}>
-            <Form.Select className="dropdown-short">
+            <Form.Select className="my-2 fc-pink dropdown-short">
               <option>Time</option>
               <option value="1">12.00 pm - 12.15 pm</option>
               <option value="2">12.15 pm - 12.30 pm</option>
@@ -69,6 +76,7 @@ export function SubscriptionPlan() {
             </Form.Select>
           </Col>
         </Row>
+        <br />
         <ButtonNavigate
           class="btn btn-main my-2"
           type="submit"

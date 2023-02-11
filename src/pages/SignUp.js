@@ -16,8 +16,9 @@ export function SignUp() {
         <ButtonNavigate
           class="btn-back"
           path="/login"
-          imgSrc={backArrow}
-          imgAlt="Back Arrow"
+          imgClassSec="back-arrow"
+          imgSrcSec={backArrow}
+          imgAltSec="Back Arrow"
         />
         <br />
         <Image className="img-small" src={email} alt="Icons" />

@@ -18,8 +18,9 @@ export function Account() {
         <ButtonNavigate
           class="btn-back"
           path="/signup"
-          imgSrc={backArrow}
-          imgAlt="Back Arrow"
+          imgClassSec="back-arrow"
+          imgSrcSec={backArrow}
+          imgAltSec="Back Arrow"
         />
         <br />
         <Image className="img-small" src={createAccount} alt="Icons" />

@@ -7,6 +7,9 @@ import { Account } from './pages/Account';
 import { Playlist } from './pages/Playlist';
 import { SubscriptionPlan } from './pages/SubscriptionPlan';
 import { Summary } from './pages/Summary';
+import { Payment } from './pages/Payment';
+import { CardDetails } from './pages/CardDetails';
+import { Confirmation } from './pages/Confirmation';
 
 import React from "react";
 
@@ -29,7 +32,9 @@ function App() {
       <Route path="playlist" element={<Playlist />} />
       <Route path="subscriptionplan" element={<SubscriptionPlan />} />
       <Route path="summary" element={<Summary />} />
-      
+      <Route path="payment" element={<Payment />} />
+      <Route path="carddetails" element={<CardDetails />} />
+      <Route path="confirmation" element={<Confirmation />} />
     </Routes>
     </React.Fragment>
   );

@@ -6,6 +6,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Offcanvas from "react-bootstrap/Offcanvas";
+import { Link } from "react-router-dom";
 
 export default class NavBar extends React.Component {
   render() {
@@ -105,8 +106,11 @@ export default class NavBar extends React.Component {
                       <NavDropdown.Item href="./">
                         Orders & reordering
                       </NavDropdown.Item>
-                      <NavDropdown.Item href="./playlist">
+                      <NavDropdown.Item>
+                        <Link to="/playlist">
                         Playlist
+                        </Link>
+                        
                       </NavDropdown.Item>
                       <NavDropdown.Item href="./">
                         Profile

@@ -2,8 +2,14 @@ import './App.css';
 import { Routes, Route } from 'react-router-dom';
 import { Home } from './pages/Home';
 import { Login } from './pages/Login';
-import { SignUp } from './pages/SignUp'
+import { SignUp } from './pages/SignUp';
+import { Account } from './pages/Account';
 import { Playlist } from './pages/Playlist';
+import { SubscriptionPlan } from './pages/SubscriptionPlan';
+import { Summary } from './pages/Summary';
+import { Payment } from './pages/Payment';
+import { CardDetails } from './pages/CardDetails';
+import { Confirmation } from './pages/Confirmation';
 
 import React from "react";
 
@@ -12,7 +18,7 @@ import NavBar from "./components/NavBar";
 
 //Styles
 import "bootstrap/dist/css/bootstrap.min.css";
-import VendorCardTiles from './components/VendorCardTiles';
+
 
 function App() {
   return (
@@ -20,9 +26,15 @@ function App() {
     <NavBar />
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/login" element={<Login />} />
-      <Route path="/signup" element={<SignUp />} />
-      <Route path="/playlist" element={<Playlist />} />
+      <Route path="login" element={<Login />} />
+      <Route path="signup" element={<SignUp />} />
+      <Route path="account" element={<Account />} />
+      <Route path="playlist" element={<Playlist />} />
+      <Route path="subscriptionplan" element={<SubscriptionPlan />} />
+      <Route path="summary" element={<Summary />} />
+      <Route path="payment" element={<Payment />} />
+      <Route path="carddetails" element={<CardDetails />} />
+      <Route path="confirmation" element={<Confirmation />} />
     </Routes>
     </React.Fragment>
   );

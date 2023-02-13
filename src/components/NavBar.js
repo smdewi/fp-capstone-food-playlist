@@ -97,54 +97,51 @@ export default class NavBar extends React.Component {
                       title="Login:"
                       id={`offcanvasNavbarDropdown-expand-${expand}`}
                     >
-                      <NavDropdown.Item href="./">
-                        pandaPay
-                      </NavDropdown.Item>
-                      <NavDropdown.Item href="./">
-                        Become a pandaPro
-                      </NavDropdown.Item>
-                      <NavDropdown.Item href="./">
-                        Orders & reordering
+                      <NavDropdown.Item>
+                        <Link to="/">pandaPay</Link>
                       </NavDropdown.Item>
                       <NavDropdown.Item>
-                        <Link to="/playlist">
-                        Playlist
-                        </Link>
-                        
+                        <Link to="/">Become a pandaPro</Link>
                       </NavDropdown.Item>
-                      <NavDropdown.Item href="./">
-                        Profile
+                      <NavDropdown.Item>
+                        <Link to="/">Orders & reordering</Link>
                       </NavDropdown.Item>
-                      <NavDropdown.Item href="./">
-                        Vouchers
+                      <NavDropdown.Item>
+                        <Link to="/playlist">Playlist</Link>
+                      </NavDropdown.Item>
+                      <NavDropdown.Item>
+                        <Link to="/">Profile</Link>
+                      </NavDropdown.Item>
+                      <NavDropdown.Item>
+                        <Link to="/">Vouchers</Link>
                       </NavDropdown.Item>
                       <NavDropdown.Divider />
                       <NavDropdown.Item href="./">
-                        Help center
+                        <Link to="/">Help center</Link>
                       </NavDropdown.Item>
-                      <NavDropdown.Item href="./login">
-                        Login
+                      <NavDropdown.Item>
+                        <Link to="/login">Login</Link>
                       </NavDropdown.Item>
-                      <NavDropdown.Item href="./signup">
-                        Sign up
+                      <NavDropdown.Item>
+                        <Link to="/signup">Sign up</Link>
                       </NavDropdown.Item>
                     </NavDropdown>
-                    <Nav.Link href="./">Favourite</Nav.Link>
-                    <Nav.Link href="./">Cart</Nav.Link>
+                    <Link className="f-14 fc-black" to="/">Favourite</Link>
+                    <Link to="/">Cart</Link>
                   </Nav>
                 </Offcanvas.Body>
               </Navbar.Offcanvas>
             </Container>
             <Container>
-            <Form className="d-flex" style={{ width: "100%" }}>
-              <Form.Control
-                type="search"
-                placeholder="Search for restaurants, cuisines and dishes"
-                className="me-2"
-                aria-label="Search"
-              />
-              <Button variant="outline-success">Search</Button>
-            </Form>
+              <Form className="d-flex" style={{ width: "100%" }}>
+                <Form.Control
+                  type="search"
+                  placeholder="Search for restaurants, cuisines and dishes"
+                  className="me-2"
+                  aria-label="Search"
+                />
+                <Button variant="outline-success">Search</Button>
+              </Form>
             </Container>
           </Navbar>
         ))}

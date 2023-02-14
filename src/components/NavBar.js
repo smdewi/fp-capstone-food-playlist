@@ -1,12 +1,21 @@
 import React from "react";
-import Button from "react-bootstrap/Button";
-import Container from "react-bootstrap/Container";
-import Form from "react-bootstrap/Form";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
-import Offcanvas from "react-bootstrap/Offcanvas";
+import {
+  Navbar,
+  Nav,
+  NavDropdown,
+  Offcanvas,
+  Container,
+  Form,
+  Image,
+} from "react-bootstrap";
 import { Link } from "react-router-dom";
+import ButtonNavigate from "./ButtonNavigate";
+import logo from "../assets/image/logo/fp-logo-transparent.svg";
+import forwardArrowTail from "../assets/icons/arrows/ic-arrow-tail-forward.svg";
+import location from "../assets/icons/general/ic-location-generic.svg";
+import favourite from "../assets/icons/general/ic-heart-white.svg";
+import cart from "../assets/icons/general/ic-cart-white.svg";
+import search from "../assets/icons/general/ic-search.svg";
 
 export default class NavBar extends React.Component {
   render() {
@@ -16,12 +25,15 @@ export default class NavBar extends React.Component {
           <Navbar
             sticky="top"
             key={expand}
-            bg="light"
             expand={expand}
-            className="mb-3"
+            className="navbar-pink mb-3"
           >
             <Container fluid>
-              <Navbar.Brand href="./">foodpanda</Navbar.Brand>
+              <Navbar.Brand>
+                <Link to="/">
+                  <Image src={logo} alt="foodpanda logo" />
+                </Link>
+              </Navbar.Brand>
               <Navbar.Toggle
                 aria-controls={`offcanvasNavbar-expand-${expand}`}
               />
@@ -30,42 +42,54 @@ export default class NavBar extends React.Component {
                 aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
                 placement="end"
               >
-                <Offcanvas.Header closeButton>
-                  <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                    Offcanvas
+                <Offcanvas.Header closeButton className="navbar-pink">
+                  <Offcanvas.Title
+                    className="fc-white"
+                    id={`offcanvasNavbarLabel-expand-${expand}`}
+                  >
+                    Welcome
                   </Offcanvas.Title>
                 </Offcanvas.Header>
-                <Offcanvas.Body>
+                <Offcanvas.Body className="navbar-pink">
                   <Nav className="justify-content-between flex-grow-1 pe-3">
                     <NavDropdown
-                      className="delivery-where"
+                      className="mt-3 pe-3"
                       title="Delivering to:"
                       id={`offcanvasNavbarDropdown-expand-${expand}`}
+                      autoClose="outside"
                     >
-                      <NavDropdown.Item href="#locationAPI">
+                      <NavDropdown.Item>
                         <Form className="d-flex">
+                          <Image
+                            className="mx-2"
+                            src={location}
+                            alt="Location"
+                          />
                           <Form.Control
                             type="search"
                             placeholder="Enter your street or postal code"
-                            className="me-2"
-                            aria-label="Search"
-                            style={{ width: "300px" }}
+                            className="searchbar my-auto me-2 f-14"
+                            aria-label="Search location"
                           />
-                          <Button variant="outline-success">Arrow image</Button>
+                          <ButtonNavigate
+                            class="btn-main-reversed btn-sm my-2"
+                            path="/"
+                            imgClass="mx-3"
+                            imgSrc={forwardArrowTail}
+                            imgAlt="Forward Arrow Tail"
+                          />
                         </Form>
                       </NavDropdown.Item>
                     </NavDropdown>
                     <NavDropdown
-                      className="delivery-when"
+                      className="mt-3 pe-3"
                       title="When:"
                       id={`offcanvasNavbarDropdown-expand-${expand}`}
                       autoClose="outside"
                     >
-                      <NavDropdown.Item
-                        href="#dateAPI"
-                        style={{ width: "100%" }}
-                      >
+                      <NavDropdown.Item style={{ width: "100%" }}>
                         <Form.Select
+                          className="f-14"
                           aria-label="Default select example"
                           autoClose="inside"
                         >
@@ -76,11 +100,9 @@ export default class NavBar extends React.Component {
                         </Form.Select>
                       </NavDropdown.Item>
                       <NavDropdown.Divider />
-                      <NavDropdown.Item
-                        href="#timingAPI"
-                        style={{ width: "100%" }}
-                      >
+                      <NavDropdown.Item style={{ width: "100%" }}>
                         <Form.Select
+                          className="f-14"
                           aria-label="Default select example"
                           autoClose="inside"
                         >
@@ -93,55 +115,84 @@ export default class NavBar extends React.Component {
                       </NavDropdown.Item>
                     </NavDropdown>
                     <NavDropdown
-                      className="account-details"
+                      className="mt-3 pe-3"
                       title="Login:"
                       id={`offcanvasNavbarDropdown-expand-${expand}`}
                     >
                       <NavDropdown.Item>
-                        <Link to="/">pandaPay</Link>
+                        <Link className="fc-darkgrey" to="/">
+                          pandaPay
+                        </Link>
                       </NavDropdown.Item>
                       <NavDropdown.Item>
-                        <Link to="/">Become a pandaPro</Link>
+                        <Link className="fc-darkgrey" to="/">
+                          Become a pandaPro
+                        </Link>
                       </NavDropdown.Item>
                       <NavDropdown.Item>
-                        <Link to="/">Orders & reordering</Link>
+                        <Link className="fc-darkgrey" to="/">
+                          Orders & reordering
+                        </Link>
                       </NavDropdown.Item>
                       <NavDropdown.Item>
-                        <Link to="/playlist">Playlist</Link>
+                        <Link className="fc-darkgrey" to="/playlist">
+                          Playlist
+                        </Link>
                       </NavDropdown.Item>
                       <NavDropdown.Item>
-                        <Link to="/">Profile</Link>
+                        <Link className="fc-darkgrey" to="/">
+                          Profile
+                        </Link>
                       </NavDropdown.Item>
                       <NavDropdown.Item>
-                        <Link to="/">Vouchers</Link>
+                        <Link className="fc-darkgrey" to="/">
+                          Vouchers
+                        </Link>
                       </NavDropdown.Item>
                       <NavDropdown.Divider />
                       <NavDropdown.Item href="./">
-                        <Link to="/">Help center</Link>
+                        <Link className="fc-darkgrey" to="/">
+                          Help center
+                        </Link>
                       </NavDropdown.Item>
                       <NavDropdown.Item>
-                        <Link to="/login">Login</Link>
+                        <Link className="fc-darkgrey" to="/login">
+                          Login
+                        </Link>
                       </NavDropdown.Item>
                       <NavDropdown.Item>
-                        <Link to="/signup">Sign up</Link>
+                        <Link className="fc-darkgrey" to="/signup">
+                          Sign up
+                        </Link>
                       </NavDropdown.Item>
                     </NavDropdown>
-                    <Link className="f-14 fc-black" to="/">Favourite</Link>
-                    <Link to="/">Cart</Link>
+                    <br />
+                    <Link to="/">
+                      <Image className="pe-3" src={favourite} alt="Favourite" />
+                    </Link>
+                    <br />
+                    <Link to="/">
+                      <Image className="pe-3" src={cart} alt="Cart" />
+                    </Link>
+                    <br />
+                    <Form className="d-flex">
+                      <Form.Control
+                        type="search"
+                        placeholder="Search for restaurants, cuisines and dishes"
+                        className="searchbar my-2 me-2 f-14"
+                        aria-label="Search"
+                      />
+                      <ButtonNavigate
+                        class="btn-main-reversed btn-sm my-2"
+                        path="/"
+                        imgClass="mx-3"
+                        imgSrc={search}
+                        imgAlt="Search"
+                      />
+                    </Form>
                   </Nav>
                 </Offcanvas.Body>
               </Navbar.Offcanvas>
-            </Container>
-            <Container>
-              <Form className="d-flex" style={{ width: "100%" }}>
-                <Form.Control
-                  type="search"
-                  placeholder="Search for restaurants, cuisines and dishes"
-                  className="me-2"
-                  aria-label="Search"
-                />
-                <Button variant="outline-success">Search</Button>
-              </Form>
             </Container>
           </Navbar>
         ))}

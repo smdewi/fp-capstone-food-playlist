@@ -2,10 +2,18 @@
   font-family: Open Sans, Arial, sans-serif !important;
 }
 
+a {
+  color: #ffffff !important;
+  font-size: 14px !important;
+  margin: auto 0px auto 0px !important;
+}
+a:link {
+  text-decoration: none;
+}
+
 .f-24 {
   font-size: 24px !important;
 }
-
 .f-14 {
   font-size: 14px !important;
 }
@@ -20,6 +28,12 @@
 .fc-pink {
   color: #e21b70 !important;
 }
+.fc-white {
+  color: #ffffff !important;
+}
+.fc-darkgrey {
+  color: #333333 !important;
+}
 
 .mb-xs {
   margin-bottom: 8px;
@@ -28,13 +42,23 @@
   margin-bottom: 32px;
 }
 
+.navbar-pink {
+  background-color: #e21b70;
+}
+
+.logo {
+  background-color: #e21b70 !important;
+  border-color: #e21b70 !important;
+  width: 180px !important;
+  height: 48px !important;
+}
+
 .btn {
   font-size: 14px !important;
   font-weight: 600 !important;
   width: 343px !important;
   height: 48px !important;
 }
-
 .btn:hover {
   box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1) !important;
   transition: background-color border-color box-shadow 0.2s ease !important;
@@ -45,13 +69,11 @@
   border-color: #e21b70 !important;
   color: white !important;
 }
-
 .btn-main-reversed {
   background: #ffffff !important;
   border-color: #e21b70 !important;
   color: #e21b70 !important;
 }
-
 .btn-main:hover,
 .btn-main-reversed:hover {
   background-color: #fdf2f7 !important;
@@ -63,7 +85,6 @@
   background: #4267b2 !important;
   border-color: #4267b2 !important;
 }
-
 .btn-fb:hover {
   background: #99a6c3 !important;
   border-color: #e3e6e8 !important;
@@ -78,15 +99,21 @@
   margin-bottom: 15px;
   margin-left: -20px;
 }
-.btn-back:hover {
+.btn-back:hover,
+.logo:hover {
   box-shadow: 0 0 0 0 !important;
+}
+
+.btn-sm {
+  width: 56px !important;
+  height: 48px !important;
 }
 
 .back-arrow {
   margin-left: -30px !important;
 }
 
- .img-small {
+.img-small {
   width: 100px !important;
   height: 100px !important;
   margin-top: -25px !important;
@@ -127,5 +154,16 @@
     box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
     border-radius: 5px !important;
     padding: 20px !important;
+  }
+  .searchbar {
+    width: 363px !important;
+    height: 48px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .searchbar {
+    width: 100% !important;
+    height: 48px !important;
   }
 }

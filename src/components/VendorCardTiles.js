@@ -15,6 +15,8 @@ function VendorCardTiles() {
               image={restaurants.image}
               text={restaurants.name}
               title2={restaurants.cuisine}
+              width={"150px"}
+              height={"225px"}
             />
           </Col>
         ))}

@@ -34,6 +34,9 @@ a:link {
 .fc-darkgrey {
   color: #333333 !important;
 }
+.fc-lightgrey {
+  color: #858585 !important;
+}
 
 .mb-xs {
   margin-bottom: 8px;
@@ -166,4 +169,25 @@ a:link {
     width: 100% !important;
     height: 48px !important;
   }
+}
+
+.vendor-card-sm {
+  width: 130px !important;
+  height: 130px !important;
+  border-color: #ffffff !important;
+}
+.vendor-card-lg {
+  width: 198px !important;
+  height: 200px !important;
+  border-color: #ffffff !important;
+}
+
+.scrollable {
+  overflow-x: scroll !important;
+  overflow-y: hidden !important;
+  white-space: nowrap !important;  
+}
+
+.no-wrap {
+  flex-wrap: nowrap !important;
 }

@@ -1,0 +1,125 @@
+{
+    "restaurants": [
+        {
+            "id": "1",
+            "name": "Avenue Eatery",
+            "cuisine": "Chicken",
+            "image": "https://images.pexels.com/photos/2611917/pexels-photo-2611917.jpeg?auto=compress&cs=tinysrgb&w=800"
+        },
+        {
+            "id": "2",
+            "name": "Lotus Tastes",
+            "cuisine": "Chinese",
+            "image": "https://marketplace.canva.com/MADQ435dI4w/1/screen/canva-chinese-fried-rice-with-soup-MADQ435dI4w.jpg"
+        },
+        {
+            "id": "3",
+            "name": "Pineapple Café",
+            "cuisine": "Thai",
+            "image": "https://images.pexels.com/photos/10398943/pexels-photo-10398943.jpeg?auto=compress&cs=tinysrgb&w=800"
+        },
+        {
+            "id": "4",
+            "name": "Garden Trattoria",
+            "cuisine": "Pizza",
+            "image": "https://images.pexels.com/photos/845812/pexels-photo-845812.jpeg?auto=compress&cs=tinysrgb&w=800"
+        },
+        {
+            "id": "5",
+            "name": "Seasons Okinawa",
+            "cuisine": "Japanese",
+            "image": "https://images.pexels.com/photos/13441988/pexels-photo-13441988.jpeg?auto=compress&cs=tinysrgb&w=800"
+        },
+        {
+            "id": "6",
+            "name": "Times Kitchen",
+            "cuisine": "Halal",
+            "image": "https://marketplace.canva.com/7LBus/MAE-5q7LBus/1/s2/canva-nasi-lemak-traditional-food-indonesia-MAE-5q7LBus.jpg"
+        },
+        {
+            "id": "7",
+            "name": "Tin Bowl Eats",
+            "cuisine": "Healthy",
+            "image": "https://images.pexels.com/photos/61180/pexels-photo-61180.jpeg?auto=compress&cs=tinysrgb&w=800"
+        },
+        {
+            "id": "8",
+            "name": "Alley Tavern",
+            "cuisine": "Indian",
+            "image": "https://images.pexels.com/photos/12842265/pexels-photo-12842265.jpeg?auto=compress&cs=tinysrgb&w=800"
+        },
+        {
+            "id": "9",
+            "name": "Seoul Kitchen",
+            "cuisine": "Korean",
+            "image": "https://images.pexels.com/photos/5774148/pexels-photo-5774148.jpeg?auto=compress&cs=tinysrgb&w=800"
+        },
+        {
+            "id": "10",
+            "name": "Tilted Provisions",
+            "cuisine": "Western",
+            "image": "https://images.pexels.com/photos/262892/pexels-photo-262892.jpeg?auto=compress&cs=tinysrgb&w=800"
+        },
+        {
+            "id": "11",
+            "name": "Soup Town",
+            "cuisine": "Chinese",
+            "image": "https://marketplace.canva.com/L4YzY/MAFG0VL4YzY/1/s2/canva-chicken-soup-MAFG0VL4YzY.jpg"
+        },
+        {
+            "id": "12",
+            "name": "Bobble Time",
+            "cuisine": "Bubble Tea",
+            "image": "https://marketplace.canva.com/O2QfQ/MAE6GHO2QfQ/1/s2/canva-a-glass-cup-of-pearl-milk-tea-%28also-called-bubble-tea%29-and-a-plate-of-tapioca-ball-on-wooden-background.-pearl-milk-tea-is-the-most-representative-drink-in-taiwan.-taiwan-food-.-with-copy-space.-MAE6GHO2QfQ.jpg"
+        },
+        {
+            "id": "13",
+            "name": "SF Fisherman Wharf",
+            "cuisine": "Seafood",
+            "image": "https://images.pexels.com/photos/725991/pexels-photo-725991.jpeg?auto=compress&cs=tinysrgb&w=800"
+        },
+        {
+            "id": "14",
+            "name": "Gelato Naturel",
+            "cuisine": "Ice Cream",
+            "image": "https://images.pexels.com/photos/1362534/pexels-photo-1362534.jpeg?auto=compress&cs=tinysrgb&w=800"
+        },
+        {
+            "id": "15",
+            "name": "Italia Delights",
+            "cuisine": "Pasta",
+            "image": "https://images.pexels.com/photos/1460872/pexels-photo-1460872.jpeg?auto=compress&cs=tinysrgb&w=800"
+        },
+        {
+            "id": "16",
+            "name": "123 Claypot Congee",
+            "cuisine": "Porridge",
+            "image": "https://marketplace.canva.com/Bbmq0/MAEb8GBbmq0/1/s2/canva-bowl-of-rice-congee--MAEb8GBbmq0.jpg"
+        },
+        {
+            "id": "17",
+            "name": "Mongkok Teahouse",
+            "cuisine": "Dim Sum",
+            "image": "https://marketplace.canva.com/60IxE/MAEFts60IxE/1/s2/canva-untitled-MAEFts60IxE.jpg"
+        },
+        {
+            "id": "18",
+            "name": "Niche Patisserie",
+            "cuisine": "Cake",
+            "image": "https://images.pexels.com/photos/3734026/pexels-photo-3734026.jpeg?auto=compress&cs=tinysrgb&w=800"
+        },
+        {
+            "id": "19",
+            "name": "Subz",
+            "cuisine": "Healthy",
+            "image": "https://images.pexels.com/photos/1603901/pexels-photo-1603901.jpeg?auto=compress&cs=tinysrgb&w=800"
+        },
+        {
+            "id": "20",
+            "name": "Cuppa",
+            "cuisine": "Coffee",
+            "image": "https://marketplace.canva.com/2HVV0/MAEIRW2HVV0/1/s2/canva-untitled-MAEIRW2HVV0.jpg"
+        }
+        
+    ]
+}

@@ -1,42 +1,22 @@
 import React from "react";
-import { Container, Row, Col, Card } from "react-bootstrap";
-
-const images = [
-  "https://via.placeholder.com/298X200",
-  "https://via.placeholder.com/298X200",
-  "https://via.placeholder.com/298X200",
-  "https://via.placeholder.com/298X200",
-  "https://via.placeholder.com/298X200",
-  "https://via.placeholder.com/298X200",
-  "https://via.placeholder.com/298X200",
-  "https://via.placeholder.com/298X200",
-  "https://via.placeholder.com/298X200",
-  "https://via.placeholder.com/298X200",
-  "https://via.placeholder.com/298X200",
-  "https://via.placeholder.com/298X200"
-];
-
-function VendorCardTile({ image }) {
-  return (
-    <Card>
-      <Card.Img variant="top" src={image} />
-      <Card.Body>
-        <Card.Title>Card Title</Card.Title>
-        <Card.Text>
-          Some text to describe the card content.
-        </Card.Text>
-      </Card.Body>
-    </Card>
-  );
-}
+import { Container, Row, Col } from "react-bootstrap";
+import VendorCardTile from "./VendorCardTile";
+import restaurants from "../assets/restaurants.json";
 
 function VendorCardTiles() {
   return (
-    <Container>
+    <Container fluid>
+      <h5 className="d-flex fw-bold">All restaurants</h5>
       <Row>
-        {images.map((image, index) => (
-          <Col key={index} md={4} lg={3} className="mb-4">
-            <VendorCardTile image={image} />
+        {restaurants.restaurants.map((restaurants) => (
+          <Col key={restaurants.id} xs={6} md={4} lg={2} className="mb-4">
+            <VendorCardTile
+              className={"vendor-card-lg"}
+              image={restaurants.image}
+              text={restaurants.name}
+              title2={restaurants.cuisine}
+              height={"130px"}
+            />
           </Col>
         ))}
       </Row>

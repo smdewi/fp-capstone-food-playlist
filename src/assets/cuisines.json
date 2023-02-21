@@ -1,0 +1,55 @@
+{
+    "cuisines": [
+        {
+            "id": "1",
+            "title": "Chicken",
+            "image": "https://images.pexels.com/photos/2338407/pexels-photo-2338407.jpeg?auto=compress&cs=tinysrgb&w=800"
+        },
+        {
+            "id": "2",
+            "title": "Chinese",
+            "image": "https://images.pexels.com/photos/2347311/pexels-photo-2347311.jpeg?auto=compress&cs=tinysrgb&w=800"
+        },
+        {
+            "id": "3",
+            "title": "Thai",
+            "image": "https://images.pexels.com/photos/12481161/pexels-photo-12481161.jpeg?auto=compress&cs=tinysrgb&w=800"
+        },
+        {
+            "id": "4",
+            "title": "Pizza",
+            "image": "https://images.pexels.com/photos/1566837/pexels-photo-1566837.jpeg?auto=compress&cs=tinysrgb&w=800"
+        },
+        {
+            "id": "5",
+            "title": "Japanese",
+            "image": "https://images.pexels.com/photos/2098085/pexels-photo-2098085.jpeg?auto=compress&cs=tinysrgb&w=800"
+        },
+        {
+            "id": "6",
+            "title": "Halal",
+            "image": "https://images.pexels.com/photos/8570300/pexels-photo-8570300.jpeg?auto=compress&cs=tinysrgb&w=800"
+        },
+        {
+            "id": "7",
+            "title": "Healthy",
+            "image": "https://images.pexels.com/photos/1213710/pexels-photo-1213710.jpeg?auto=compress&cs=tinysrgb&w=800"
+        },
+        {
+            "id": "8",
+            "title": "Indian",
+            "image": "https://images.pexels.com/photos/2474661/pexels-photo-2474661.jpeg?auto=compress&cs=tinysrgb&w=800"
+        },
+        {
+            "id": "9",
+            "title": "Korean",
+            "image": "https://images.pexels.com/photos/5773967/pexels-photo-5773967.jpeg?auto=compress&cs=tinysrgb&w=800"
+        },
+        {
+            "id": "10",
+            "title": "Western",
+            "image": "https://images.pexels.com/photos/3616956/pexels-photo-3616956.jpeg?auto=compress&cs=tinysrgb&w=800"
+        }
+        
+    ]
+}

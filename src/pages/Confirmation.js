@@ -16,7 +16,7 @@ export function Confirmation() {
       <ButtonNavigate
         class="btn btn-main my-2"
         type="submit"
-        path="/"
+        path="/playlist"
         text="Continue"
       />
     </Container>

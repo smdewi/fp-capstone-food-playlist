@@ -64,7 +64,7 @@ export function Account() {
         <ButtonNavigate
           class="btn btn-main my-2"
           type="submit"
-          path="/playlist"
+          path="/subscriptionplan"
           text="Create an account"
         />
       </Form>

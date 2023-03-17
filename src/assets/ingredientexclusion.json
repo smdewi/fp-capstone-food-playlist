@@ -1,0 +1,45 @@
+{
+    "ingredientexclusion": [
+        {
+            "id": "1",
+            "title": "Chilli"
+        },
+        {
+            "id": "2",
+            "title": "Nuts"
+        },
+        {
+            "id": "3",
+            "title": "Onion"
+        },
+        {
+            "id": "4",
+            "title": "Egg"
+        },
+        {
+            "id": "5",
+            "title": "Gluten"
+        },
+        {
+            "id": "6",
+            "title": "Pork"
+        },
+        {
+            "id": "7",
+            "title": "Cilantro"
+        },
+        {
+            "id": "8",
+            "title": "Garlic"
+        },
+        {
+            "id": "9",
+            "title": "Pepper"
+        },
+        {
+            "id": "10",
+            "title": "Crustacean"
+        }
+        
+    ]
+}

@@ -10,7 +10,7 @@ export function SubscriptionPlan() {
       <Form>
         <ButtonNavigate
           class="btn-back"
-          path="/playlist"
+          path="/account"
           imgClassSec="back-arrow"
           imgSrcSec={backArrow}
           imgAltSec="Back Arrow"
@@ -80,8 +80,8 @@ export function SubscriptionPlan() {
         <ButtonNavigate
           class="btn btn-main my-2"
           type="submit"
-          path="/summary"
-          text="Review subscription plan"
+          path="/cuisine-selection"
+          text="Select cusines"
         />
       </Form>
     </Container>

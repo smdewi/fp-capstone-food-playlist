@@ -10,6 +10,7 @@ import { Summary } from './pages/Summary';
 import { Payment } from './pages/Payment';
 import { CardDetails } from './pages/CardDetails';
 import { Confirmation } from './pages/Confirmation';
+import { DeliveryReminder } from './pages/DeliveryReminder';
 
 import React from "react";
 
@@ -35,6 +36,7 @@ function App() {
       <Route path="payment" element={<Payment />} />
       <Route path="carddetails" element={<CardDetails />} />
       <Route path="confirmation" element={<Confirmation />} />
+      <Route path="deliveryreminder" element={<DeliveryReminder />} />
     </Routes>
     </React.Fragment>
   );

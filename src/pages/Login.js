@@ -37,11 +37,11 @@ export function Login() {
       />
 
       <hr style={{ width: "343px" }} />
-      <ButtonNavigate class="btn btn-main my-2" path="/signup" text="Log in" />
+      <ButtonNavigate class="btn btn-main my-2" path="/signin" text="Existing user sign in" />
       <ButtonNavigate
         class="btn btn-main-reversed my-2"
         path="/signup"
-        text="Sign up"
+        text="Sign up new account"
       />
     </Container>
   );

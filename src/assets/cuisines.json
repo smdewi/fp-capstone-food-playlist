@@ -27,7 +27,7 @@
         },
         {
             "id": "6",
-            "title": "Halal",
+            "title": "Malay",
             "image": "https://images.pexels.com/photos/8570300/pexels-photo-8570300.jpeg?auto=compress&cs=tinysrgb&w=800"
         },
         {
@@ -49,7 +49,31 @@
             "id": "10",
             "title": "Western",
             "image": "https://images.pexels.com/photos/3616956/pexels-photo-3616956.jpeg?auto=compress&cs=tinysrgb&w=800"
+        },
+        {
+            "id": "11",
+            "title": "Fast Food",
+            "image": "https://images.pexels.com/photos/12916871/pexels-photo-12916871.jpeg?auto=compress&cs=tinysrgb&w=800"
+        },
+        {
+            "id": "12",
+            "title": "Soup",
+            "image": "https://images.pexels.com/photos/1277483/pexels-photo-1277483.jpeg?auto=compress&cs=tinysrgb&w=800"
+        },
+        {
+            "id": "13",
+            "title": "Porridge",
+            "image": "https://images.pexels.com/photos/5652188/pexels-photo-5652188.jpeg?auto=compress&cs=tinysrgb&w=800"
+        },
+        {
+            "id": "14",
+            "title": "Vegetarian",
+            "image": "https://images.pexels.com/photos/2347311/pexels-photo-2347311.jpeg?auto=compress&cs=tinysrgb&w=800"
+        },
+        {
+            "id": "15",
+            "title": "Dessert",
+            "image": "https://images.pexels.com/photos/205961/pexels-photo-205961.jpeg?auto=compress&cs=tinysrgb&w=800"
         }
-        
     ]
 }

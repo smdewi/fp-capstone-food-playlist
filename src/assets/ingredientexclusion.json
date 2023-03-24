@@ -1,0 +1,53 @@
+{
+    "ingredientexclusion": [
+        {
+            "id": "1",
+            "title": "Nuts"
+        },
+        {
+            "id": "2",
+            "title": "Dairy"
+        },
+        {
+            "id": "3",
+            "title": "Gluten"
+        },
+        {
+            "id": "4",
+            "title": "Soy bean"
+        },
+        {
+            "id": "5",
+            "title": "Egg"
+        },
+        {
+            "id": "6",
+            "title": "Crustacean"
+        },
+        {
+            "id": "7",
+            "title": "Pork"
+        },
+        {
+            "id": "8",
+            "title": "Cilantro"
+        },
+        {
+            "id": "9",
+            "title": "Garlic"
+        },
+        {
+            "id": "10",
+            "title": "Pepper"
+        },
+        {
+            "id": "11",
+            "title": "Chilli"
+        },
+        {
+            "id": "12",
+            "title": "Onion"
+        }
+        
+    ]
+}

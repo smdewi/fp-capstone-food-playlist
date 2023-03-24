@@ -1,42 +1,49 @@
 import React from "react";
-import { Card, Container, Row, Col, Badge } from "react-bootstrap";
+import { Container, Col, Image } from "react-bootstrap";
 
+import { PlaylistCard } from "../components/PlaylistCard";
+import ButtonNavigate from "../components/ButtonNavigate";
+import backArrow from "../assets/icons/arrows/ic-arrow-tail-back.svg";
+import paupauPlaylist from "../assets/image/playlist/pau-pau-playlist.png";
+import playlist from "../assets/playlist.json";
 
 export function Playlist() {
-    return (
-        <Container fluid style={{ marginTop: "3em"}}>
-
-            <Container className="container-shadow" style={{ width: "75%" }}>
-                <Row>
-                    <Col xs={4}>Placeholder Image</Col>
-                    <Col xs={8}>
-                        <Card.Title>Rainy Day Playlist</Card.Title>
-                        <Card.Body>2 / 5</Card.Body>
-                        <br />
-                        <Card.Body>starts on 1 Feb 2023</Card.Body>
-                        <Card.Body>ends on 1 Mar 2023</Card.Body>
-                        <br />
-                        <Badge pill bg="info" style={{ marginRight: "1em"}}>Soup</Badge>
-                        <Badge pill bg="info" style={{ marginRight: "1em"}}>Western</Badge>
-                        <Badge pill bg="info" style={{ marginRight: "1em"}}>Chinese</Badge>
-                    </Col>
-                </Row> 
-            </Container>
-
-            <Container className="container-shadow" style={{ width: "60%", marginTop: "2em" }}>
-                <Row>
-                    <Col xs={8}>
-                        <Card.Title>Mushroom Soup</Card.Title>
-                        <br />
-                        <Card.Body>Menu item description</Card.Body>
-                        <Card.Body>$12.80</Card.Body>
-                        <br />
-                        <Card.Body>From: Soup Spoon</Card.Body>
-                    </Col>
-                    <Col xs={4}>Placeholder Image</Col>
-                </Row>
-            </Container>
-        </Container>
-        
-    );
+  return (
+    <Container className="container-shadow" style={{ width: "380px" }}>
+      <ButtonNavigate
+        class="btn-back"
+        path="/confirmation"
+        imgClassSec="back-arrow"
+        imgSrcSec={backArrow}
+        imgAltSec="Back Arrow"
+      />
+      <br />
+      <Image className="img-small" src={paupauPlaylist} alt="Icons" />
+      <h2 className="f-24 fw-bold mb-lg">Pau Pau's Playlists</h2>
+      {playlist.playlist.map((playlist) => (
+        <Col key={playlist.id} className="mb-4">
+          <PlaylistCard
+            image={playlist.image}
+            title={playlist.playlistTitle}
+            sn={playlist.id}
+            status={playlist.status}
+            startDate={playlist.startDate}
+            endDate={playlist.endDate}
+            cusine1={playlist.cusine1}
+            cusine2={playlist.cusine2}
+            cusine3={playlist.cusine3}
+            ingredient1={playlist.ingredient1}
+            ingredient2={playlist.ingredient2}
+            ingredient3={playlist.ingredient3}
+          />
+        </Col>
+      ))}
+      <ButtonNavigate
+        class="btn btn-main my-2"
+        type="submit"
+        path="/deliveryreminder"
+        text="Home"
+      />
+    </Container>
+  );
 }

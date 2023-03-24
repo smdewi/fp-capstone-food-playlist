@@ -21,6 +21,12 @@ p {
 .f-14 {
   font-size: 14px !important;
 }
+.f-11 {
+  font-size: 11px !important;
+}
+.f-8 {
+  font-size: 8px !important;
+}
 
 .fw-bold {
   font-weight: 700 !important;
@@ -49,8 +55,9 @@ p {
   margin-bottom: 32px;
 }
 
-.navbar-pink {
-  background-color: #e21b70;
+.navbar-pink,
+.rounded-pill {
+  background-color: #e21b70 !important;
 }
 
 .logo {
@@ -66,7 +73,8 @@ p {
   width: 343px !important;
   height: 48px !important;
 }
-.btn:hover {
+.btn:hover,
+.option:hover {
   box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1) !important;
   transition: background-color border-color box-shadow 0.2s ease !important;
 }
@@ -82,7 +90,8 @@ p {
   color: #e21b70 !important;
 }
 .btn-main:hover,
-.btn-main-reversed:hover {
+.btn-main-reversed:hover,
+.option:hover {
   background-color: #fdf2f7 !important;
   border-color: #dcdcdc !important;
   color: #c21760 !important;
@@ -106,6 +115,13 @@ p {
   margin-bottom: 15px;
   margin-left: -20px;
 }
+
+.playlist-btn {
+  margin-top: 5px;
+  margin-left: -10px;
+  margin-right: 12px;
+}
+
 .btn-back:hover,
 .logo:hover {
   box-shadow: 0 0 0 0 !important;
@@ -134,18 +150,37 @@ p {
   margin-left: 82px !important;
 }
 
-.dropdown-short {
+.dropdown-short,
+.react-ios-time-picker-input {
+  border: 1px solid #555;
   border-color: #e21b70 !important;
-  width: 90px !important;
+  width: 100px !important;
   height: 48px !important;
-  margin: 0 0 10px 40px !important;
+  margin: 0 0 10px 30px !important;
+  border-radius: 5px !important;
+}
+
+.dropdown-long {
+  border: 1px solid #555;
+  border-color: #e21b70 !important;
+}
+
+.react-datepicker__input-container input::placeholder {
+  color: #e21b70;
+}
+
+.react-ios-time-picker-input {
+  cursor: text;
+  padding: 5px 10px;
+  color: #e21b70;
+  margin-top: 9px !important;
 }
 
 .container-border-pink-md {
   color: #e21b70;
   border-color: #e21b70 !important;
   border-radius: 5px !important;
-  width: 240px !important;
+  width: 230px !important;
   height: 48px !important;
 }
 .container-border-pink-lg {
@@ -173,6 +208,9 @@ p {
     width: 100% !important;
     height: 48px !important;
   }
+  .btn {
+    width: 355px !important;
+  }
 }
 
 .vendor-card-sm {
@@ -184,6 +222,23 @@ p {
   border-color: #ffffff !important;
 }
 
+.playlist-container-shadow {
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 10px !important;
+  padding: 20px !important;
+  background-color: #fdf2f7 !important;
+}
+
+.playlist-card-sm {
+  width: 80px !important;
+  height: 60px !important;
+  margin-left: -25px !important;
+}
+
+.playlist-container-sm {
+  width: 140px !important;
+}
+
 .scrollable {
   overflow-x: scroll !important;
   overflow-y: hidden !important;
@@ -192,4 +247,40 @@ p {
 
 .no-wrap {
   flex-wrap: nowrap !important;
+}
+
+.option {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 50px;
+  border: 1px solid #ccc;
+  margin: 5px 5px 5px 5px !important;
+  cursor: pointer;
+  text-align: center;
+  line-height: 90px;
+  width: 100px !important;
+  height: 100px !important;
+  color: #e21b70;
+  border-color: #e21b70 !important;
+  font-size: 14px !important;
+}
+.option.selected {
+  background-color: #e21b70;
+  color: white;
+  border-color: #e21b70;
+}
+
+.react-ios-time-picker-container,
+.react-ios-time-picker-btn-container,
+.react-ios-time-picker-selected-overlay {
+  background-color: #ededed !important;
+}
+
+.react-ios-time-picker-btn,
+.react-ios-time-picker-btn-cancel,
+.react-ios-time-picker-colon,
+.react-ios-time-picker-cell-inner-selected,
+.react-ios-time-picker-cell-inner-hour-format-selected {
+  color: #000000 !important;
+  font-weight: 700 !important;
 }

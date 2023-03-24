@@ -13,7 +13,7 @@ export function DeliveryReminder() {
 
   const handleClose = () => setShow(false);
   return (
-    <div className="App">
+    <div>
       <SwimLane></SwimLane>
       <br />
       <VendorCardTiles></VendorCardTiles>
@@ -27,8 +27,8 @@ export function DeliveryReminder() {
             <Form>
               <Image className="img-large" src={orderReminder} alt="Icons" />
               <h2 className="f-24 fw-bold mb-lg text-center">
-                You have an upcoming delivery for a healthy meal on 23 April 2023 (Sunday) at
-                1.00pm.
+                You have an upcoming delivery on 20 April 2023 (Thur) at
+                12.00pm.
               </h2>
               <ButtonNavigate
                 class="btn btn-main my-2"
@@ -39,7 +39,7 @@ export function DeliveryReminder() {
               <ButtonNavigate
                 class="btn btn-main-reversed my-2"
                 type="submit"
-                path="/playlist"
+                path="/playlistpause"
                 text="Pause my food playlist"
               />
             </Form>

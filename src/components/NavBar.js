@@ -13,7 +13,7 @@ import ButtonNavigate from "./ButtonNavigate";
 import logo from "../assets/image/logo/fp-logo-transparent.svg";
 import forwardArrowTail from "../assets/icons/arrows/ic-arrow-tail-forward.svg";
 import location from "../assets/icons/general/ic-location-generic.svg";
-import favourite from "../assets/icons/general/ic-heart-white.svg";
+import playlist from "../assets/icons/general/ic-heart-white.svg";
 import cart from "../assets/icons/general/ic-cart-white.svg";
 import search from "../assets/icons/general/ic-search.svg";
 
@@ -167,8 +167,8 @@ export default class NavBar extends React.Component {
                       </NavDropdown.Item>
                     </NavDropdown>
                     <br />
-                    <Link to="/">
-                      <Image className="pe-3" src={favourite} alt="Favourite" />
+                    <Link to="/playlist">
+                      <Image className="pe-3" src={playlist} alt="Playlist" />
                     </Link>
                     <br />
                     <Link to="/">

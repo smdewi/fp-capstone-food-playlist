@@ -1,0 +1,25 @@
+{
+    "users": [
+        {
+            "id": "1",
+            "email": "paupau@hungry.com",
+            "firstName": "Pau",
+            "lastName": "Pau",
+            "password": "iwantfoodnow"
+        },
+        {
+            "id": "2",
+            "email": "paupau2@hungry.com",
+            "firstName": "Pau",
+            "lastName": "Pau2",
+            "password": "iwantfoodnow"            
+        },
+        {
+            "id": "3",
+            "email": "paupau3@hungry.com",
+            "firstName": "Pau",
+            "lastName": "Pau3",
+            "password": "iwantfoodnow"
+        }
+    ]
+}

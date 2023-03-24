@@ -1,0 +1,55 @@
+{
+    "playlist": [
+        {
+            "id": "1",
+            "email": "paupau@hungry.com",
+            "pax": "1",
+            "deliveryTime": "12:00PM",
+            "startDate": "30 Mar 2023",
+            "endDate": "20 Apr 2023",
+            "status": "Active",
+            "cusine1": "Chinese",
+            "cusine2": "Malay",
+            "cusine3": "Indian",
+            "ingredient1": "Nuts",
+            "ingredient2": "Onion",
+            "ingredient3": "Cilantro",
+            "playlistTitle": "Local Favourites",
+            "image": "https://images.pexels.com/photos/777059/pexels-photo-777059.jpeg?auto=compress&cs=tinysrgb&w=800"
+        },
+        {
+            "id": "2",
+            "email": "paupau@hungry.com",
+            "pax": "2",
+            "deliveryTime": "13:00PM",
+            "startDate": "15 Feb 2023",
+            "endDate": "15 Mar 2023",
+            "status": "Inactive",
+            "cusine1": "Soup",
+            "cusine2": "Porridge",
+            "cusine3": "",
+            "ingredient1": "Pepper",
+            "ingredient2": "",
+            "ingredient3": "",
+            "playlistTitle": "Rainy Season",
+            "image": "https://images.pexels.com/photos/1463530/pexels-photo-1463530.jpeg?auto=compress&cs=tinysrgb&w=800"
+        },
+        {
+            "id": "3",
+            "email": "paupau@hungry.com",
+            "pax": "1",
+            "deliveryTime": "06:00PM",
+            "startDate": "6 Jan 2023",
+            "endDate": "3 Feb 2023",
+            "status": "Inactive",
+            "cusine1": "Fast food",
+            "cusine2": "Western",
+            "cusine3": "",
+            "ingredient1": "Chilli",
+            "ingredient2": "",
+            "ingredient3": "",
+            "playlistTitle": "Thank God It's Fried-day (TGIF)",
+            "image": "https://images.pexels.com/photos/1172742/pexels-photo-1172742.jpeg?auto=compress&cs=tinysrgb&w=800"
+        }
+    ]
+}

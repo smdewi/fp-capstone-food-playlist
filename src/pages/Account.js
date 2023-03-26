@@ -50,7 +50,7 @@ export function Account() {
           <Col>
             <Form.Group className="mb-3" controlId="formFirstName">
               <FloatingLabel
-                controlId="floatingInput"
+                controlId="firstName"
                 label="First name"
                 className="mb-3"
               >
@@ -61,7 +61,7 @@ export function Account() {
           <Col>
             <Form.Group className="mb-3" controlId="formLastName">
               <FloatingLabel
-                controlId="floatingInput"
+                controlId="lastName"
                 label="Last name"
                 className="mb-3"
               >
@@ -73,7 +73,7 @@ export function Account() {
 
         <Form.Group className="mb-3" controlId="formEmail">
           <FloatingLabel
-            controlId="floatingInput"
+            controlId="email"
             label="Email address"
             className="mb-3"
           >
@@ -83,7 +83,7 @@ export function Account() {
 
         <Form.Group className="mb-3" controlId="formPassword">
           <FloatingLabel
-            controlId="floatingInput"
+            controlId="password"
             label="Password"
             className="mb-3"
           >

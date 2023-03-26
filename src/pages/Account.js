@@ -92,10 +92,10 @@ export function Account() {
         </Form.Group>
         <ButtonNavigate
           class="btn btn-main my-2"
-          type="submit"
+          type="button"
           path="/subscriptionplan"
           text="Create an account"
-          onSubmit={handleSubmit}
+          onClick={handleSubmit}
         />
       </Form>
     </Container>

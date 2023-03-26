@@ -28,11 +28,12 @@ export function Account() {
       email: email,
       password: password
     });
+    alert('Creating new user')
   }
 
   return (
     <Container className="container-shadow" style={{ width: "380px" }}>
-      <Form>
+      <Form method='POST' onSubmit={handleSubmit}>
         <ButtonNavigate
           class="btn-back"
           path="/signup"

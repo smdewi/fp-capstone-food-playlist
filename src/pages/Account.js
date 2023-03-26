@@ -32,7 +32,7 @@ export function Account() {
 
   return (
     <Container className="container-shadow" style={{ width: "380px" }}>
-      <Form onSubmit={handleSubmit}>
+      <Form>
         <ButtonNavigate
           class="btn-back"
           path="/signup"
@@ -95,7 +95,7 @@ export function Account() {
           type="submit"
           path="/subscriptionplan"
           text="Create an account"
-          onClick={handleSubmit}
+          onSubmit={handleSubmit}
         />
       </Form>
     </Container>

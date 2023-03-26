@@ -95,6 +95,7 @@ export function Account() {
           type="submit"
           path="/subscriptionplan"
           text="Create an account"
+          onClick={handleSubmit}
         />
       </Form>
     </Container>

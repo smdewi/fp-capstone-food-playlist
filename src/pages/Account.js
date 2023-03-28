@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import Axios from 'axios';
 import {
   Container,
@@ -12,28 +13,33 @@ import {
 import ButtonNavigate from "../components/ButtonNavigate";
 import backArrow from "../assets/icons/arrows/ic-arrow-tail-back.svg";
 import createAccount from "../assets/image/login/img-create-new-account.svg";
+import SubmitButton from '../components/SubmitButton';
 
 export function Account() {
-  let [firstName, setFirstName] = useState("");
-  let [lastName, setLastName] = useState("");
-  let [email, setEmail] = useState("");
-  let [password, setPassword] = useState("");
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
-  const handleSubmit = (e) => {
+  const navigate = useNavigate();
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
-    Axios.post('https://pau-pau-food-playlist-api.onrender.com/user', {
+    await Axios.post('https://pau-pau-food-playlist-api.onrender.com/user', {
       firstName: firstName,
       lastName: lastName,
       email: email,
       password: password
     });
-    alert('Creating new user')
+    
+    alert('Creating new user');
+    navigate('/subscriptionplan');
   }
 
   return (
     <Container className="container-shadow" style={{ width: "380px" }}>
-      <Form method='POST' onSubmit={handleSubmit}>
+      <Form onSubmit={handleSubmit}>
         <ButtonNavigate
           class="btn-back"
           path="/signup"
@@ -91,12 +97,12 @@ export function Account() {
             <Form.Control type="password" placeholder="Password" required onChange={(e) => {setPassword(e.target.value)}} />
           </FloatingLabel>
         </Form.Group>
-        <ButtonNavigate
+
+        <SubmitButton
           class="btn btn-main my-2"
-          type="button"
-          path="/subscriptionplan"
-          text="Create an account"
-          onClick={handleSubmit}
+          type="submit"
+          
+          text="Submit Form"
         />
       </Form>
     </Container>

@@ -101,8 +101,7 @@ export function Account() {
         <SubmitButton
           class="btn btn-main my-2"
           type="submit"
-          
-          text="Submit Form"
+          text="Create New User"
         />
       </Form>
     </Container>

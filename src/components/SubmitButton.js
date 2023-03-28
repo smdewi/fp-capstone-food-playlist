@@ -1,15 +1,12 @@
 import React from "react";
 import { Button, Image } from "react-bootstrap";
-import { useNavigate } from "react-router-dom";
 
-function ButtonNavigate(props) {
-  let navigate = useNavigate();
-  const handleClick = () => {
-    navigate(props.path);
-  };
+
+function SubmitButton(props) {
+  
 
   return (
-    <Button className={props.class} type={props.type} onClick={handleClick}>
+    <Button className={props.class} type={props.submit}>
       <div class="row">
           <div class="col-2 p-1">
           <Image
@@ -31,4 +28,4 @@ function ButtonNavigate(props) {
   );
 }
 
-export default ButtonNavigate;
+export default SubmitButton;

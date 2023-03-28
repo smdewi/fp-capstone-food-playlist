@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Container, Form, Row, Col, Image, Card } from "react-bootstrap";
+import { Container, Form, Row, Col, Image, Card, FloatingLabel } from "react-bootstrap";
 
 import DeliveryDate from "../components/DeliveryDate";
 import DeliveryTime from "../components/DeliveryTime.js";
@@ -11,6 +11,7 @@ import subscriptionPlan from "../assets/image/login/pau-pau-order-processing.png
 export function SubscriptionPlan() {
   const [selectedWeekday, setSelectedWeekday] = useState(null);
   const [endDate, setEndDate] = useState(null);
+  const [playlistName, setPlaylistName] = useState("");
 
   const handleDateChange = (date) => {
     setSelectedWeekday(date.toLocaleDateString("en-GB", { weekday: "long" }));
@@ -33,13 +34,30 @@ export function SubscriptionPlan() {
         <br />
         <Image className="img-small" src={subscriptionPlan} alt="Icons" />
         <h2 className="f-24 fw-bold mb-lg">
-          Let's configure your subscription plan
+          Let's setup your playlist
         </h2>
-        <Row>
+
+        <Form.Group className="mb-3">
+          <FloatingLabel
+            controlId="playlistName"
+            label="Playlist Name"
+            className="mb-3"x
+          >
+            <Form.Control placeholder="Playlist Name" required onChange={(e) => {setPlaylistName(e.target.value)}}/>
+          </FloatingLabel>
+          <FloatingLabel
+            controlID="numOfMeals"
+            label="No of meals to be delivered"
+          >
+            <Form.Control placeholder={5} defaultValue={5}></Form.Control>
+          </FloatingLabel>
+        </Form.Group>
+
+        {/* <Row>
           <Col xs={7} sm={7} md={7} lg={7} xl={7} xxl={7}>
             <Card className="my-2 container-border-pink-md">
               <Card.Text className="my-auto mx-auto">
-                5 meal deliveries/pax
+                No of meals to be delivered
               </Card.Text>{" "}
             </Card>
           </Col>
@@ -52,7 +70,8 @@ export function SubscriptionPlan() {
               <option value="4">4</option>
             </Form.Select>
           </Col>
-        </Row>
+        </Row> */}
+
         <Row>
           <Col xs={7} sm={7} md={7} lg={7} xl={7} xxl={7}>
             <Card className="my-2 container-border-pink-md">
@@ -65,6 +84,7 @@ export function SubscriptionPlan() {
             <DeliveryTime />
           </Col>
         </Row>
+
         <Row>
           <Col xs={7} sm={7} md={7} lg={7} xl={7} xxl={7}>
             <Card className="my-2 container-border-pink-md">
@@ -80,6 +100,7 @@ export function SubscriptionPlan() {
             />
           </Col>
         </Row>
+
         <Row>
           <Col>
             {selectedWeekday && (
